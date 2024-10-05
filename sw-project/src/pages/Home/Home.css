@@ -1,0 +1,43 @@
+@keyframes twinkling {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+  }
+  
+.container {
+    position: fixed;
+    max-width: 1800px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw; 
+    height: 100vh; 
+        background-image:
+      radial-gradient(2px 2px at 20% 20%, white 2px, transparent 0),
+      radial-gradient(2px 2px at 50% 50%, white 2px, transparent 0),
+      radial-gradient(2px 2px at 80% 80%, white 2px, transparent 0),
+      radial-gradient(2px 2px at 70% 30%, white 2px, transparent 0),
+      radial-gradient(2px 2px at 40% 70%, white 2px, transparent 0);
+    background-size: 100px 100px;
+    animation: twinkling 1.5s infinite;
+}
+
+body {
+    background-color: black;
+  }
+  
+
+  
+  h1{
+    font-family: 'Audiowide', sans-serif;
+  
+    text-shadow: 
+    2px 2px 0 rgb(255, 217, 0),   /* Borde rojo a la derecha */
+    -2px 2px 0 rgb(255, 217, 0),  /* Borde rojo a la izquierda */
+    2px -2px 0 rgb(255, 217, 0),  /* Borde rojo arriba */
+    -2px -2px 0 rgb(255, 217, 0); /* Borde rojo abajo */
+  }
+
+  h4 {
+    color: rgb(255, 255, 255);
+  }

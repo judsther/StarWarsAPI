@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 //import { MyProvider } from './contexts/UserDataContext'
 
 import { Home } from './pages/Home/Home'
-import { People } from './People/People'
+import { Characters } from './pages/Characters/Characters'
 
 
 function App() {
@@ -20,7 +20,8 @@ function App() {
             {/* Route -> Generamos todas las rutas que necesitemos */ }
             <Route  path='/' element={<Home />}/>
             {/* <Route  path='/session' element={<Session />}/> */}
-            <Route path='/people' element={<People />}/>
+            <Route path='/Characters' element={<Characters />}/>
+          
           </Routes>
       </BrowserRouter>
       {/*</MyProvider>*/}

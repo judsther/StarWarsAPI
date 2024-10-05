@@ -1,4 +1,4 @@
-import { LoadingComponent } from "../../components/LoadingComponents"
+import { LoadingComponent } from "../../../components/LoadingComponents"
 
 export const CardPeople = ({people}) => {
 
@@ -7,7 +7,7 @@ export const CardPeople = ({people}) => {
   }
     return (
       <>
-          <article className="card" style={{'width': '18rem'}}>
+          <article className="card container-fluid mb-3" style={{'width': '20rem'}}>
           <h1 className="card-title">{people.name}</h1>
           <div className="card-body">
               <h5 className="card-title">{people.name}</h5>

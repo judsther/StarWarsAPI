@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { usePeopleData } from "../hooks/usePeopleData"
-import { ListPeople } from "./components/ListPeople";
-import { LoadingComponent } from "../components/LoadingComponents";
+import { usePeopleData } from "../../../hooks/usePeopleData"
+import { ListPeople } from "./ListPeople";
+import { LoadingComponent } from "../../../components/LoadingComponents";
 
 export const People = () => {
     //Recibiendo la informacion del hook useCountriesData
@@ -12,7 +12,7 @@ export const People = () => {
     
     return(
         <>
-            <h1>List of Characters</h1>
+            <h1>Characters</h1>
 
             <label className="form-label">
               Filter by Movie:
@@ -37,7 +37,7 @@ export const People = () => {
             </label>
 
             {/* Aca agrego mi codigo JS*/}
-            {/* Renderizado condicional -> OPCION DE MOSTRAR UN DATO O OTROS*/}
+            {/* Renderizado condicional -> OPCION DE MOSTRAR UN DATO u OTROS*/}
             {  people.length > 0 ?  <ListPeople people={people}/> : <LoadingComponent />
                }
         </>
